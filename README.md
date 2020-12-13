@@ -6,4 +6,3 @@ Extracted from [crypto/cipher](https://golang.org/src/crypto/cipher/xor_generic.
 ## Reference
 
 * [issues/30553](https://github.com/golang/go/issues/30553) as rejected proposal to provide XOR in go stdlib
-*
