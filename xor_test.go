@@ -11,7 +11,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/gotd/xor"
+	"github.com/go-faster/xor"
 )
 
 func TestXOR(t *testing.T) {
