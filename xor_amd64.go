@@ -19,9 +19,5 @@ func xorBytes(dst, a, b []byte) int {
 	return n
 }
 
-func xorWords(dst, a, b []byte) {
-	xorBytes(dst, a, b)
-}
-
 //go:noescape
 func xorBytesSSE2(dst, a, b *byte, n int)
