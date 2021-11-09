@@ -1,5 +1,4 @@
-# xor [![Go Reference](https://img.shields.io/badge/go-pkg-00ADD8)](https://pkg.go.dev/github.com/go-faster/xor#section-documentation) [![codecov](https://img.shields.io/codecov/c/github/go-faster/xor?label=cover)](https://codecov.io/gh/go-faster/xor)
-
+# xor [![Go Reference](https://img.shields.io/badge/go-pkg-00ADD8)](https://pkg.go.dev/github.com/go-faster/xor#section-documentation) [![codecov](https://img.shields.io/codecov/c/github/go-faster/xor?label=cover)](https://codecov.io/gh/go-faster/xor) [![production](https://img.shields.io/badge/-prod-brightgreen)](https://go-faster.org/docs/projects/status#production)
 
 Package xor implements XOR operations on byte slices.
 Extracted from [crypto/cipher](https://golang.org/src/crypto/cipher/xor_generic.go).
