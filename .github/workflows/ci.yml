@@ -28,7 +28,7 @@ jobs:
         include:
           - arch: 386
             runner: ubuntu-latest
-            go: 1.19
+            go: 1.18
           - arch: amd64
             runner: ubuntu-latest
             flags: "-race"
