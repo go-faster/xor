@@ -18,14 +18,14 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v6
         with:
-          go-version: 1.17
+          # golangci-lint v2 runs `go list -buildvcs`, which needs Go 1.18+.
+          go-version: stable
 
       - name: Lint
         uses: golangci/golangci-lint-action@v9.2.0
         with:
           version: latest
           args: --timeout 5m
-          skip-go-installation: true
 
   # Check if there are any dirty changes after go mod tidy
   check-mod:
