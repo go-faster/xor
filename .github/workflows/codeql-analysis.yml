@@ -40,6 +40,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v6
 
+    # CodeQL runs `go list -buildvcs`, which needs Go 1.18+, and expects Go
+    # to be installed before init.
+    - name: Install Go
+      uses: actions/setup-go@v6
+      with:
+        go-version: stable
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
@@ -49,11 +56,6 @@ jobs:
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
-
-    - name: Install Go
-      uses: actions/setup-go@v6
-      with:
-        go-version: 1.17
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
