@@ -38,7 +38,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     # CodeQL runs `go list -buildvcs`, which needs Go 1.18+, and expects Go
     # to be installed before init.
