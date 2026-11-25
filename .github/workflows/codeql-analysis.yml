@@ -43,7 +43,7 @@ jobs:
     # CodeQL runs `go list -buildvcs`, which needs Go 1.18+, and expects Go
     # to be installed before init.
     - name: Install Go
-      uses: actions/setup-go@v6
+      uses: actions/setup-go@v7
       with:
         go-version: stable
 
